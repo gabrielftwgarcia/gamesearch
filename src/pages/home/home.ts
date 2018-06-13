@@ -15,7 +15,7 @@ import { Observable } from 'rxjs/Observable';
 })
 export class HomePage {
 
-  lista: IGames;
+  lista: Promise<any>;
   desejos = [];
   items: string[];
 
