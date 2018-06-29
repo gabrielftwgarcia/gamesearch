@@ -12,7 +12,7 @@
     <ion-fab top right edge>
         <button ion-fab mini color="danger" ><ion-icon name="trash"></ion-icon></button>
         <ion-fab-list>
-          <button (click)="deletarTudo()"><ion-icon name="trash"></ion-icon>Deletar tudo</button>
+          <button (click)="deletarTudo()"><ion-icon id="delallIcon" name="trash"></ion-icon>Deletar tudo</button>
     
         </ion-fab-list>
       </ion-fab>
@@ -24,7 +24,6 @@
           <img src="{{ item.appimg }}"/>
         </ion-thumbnail>
         <h2>{{ item.app_name  }}</h2>
-        <p>{{ item.app_price }}</p>
       </ion-item>
 
       <ion-item-options side="right">
