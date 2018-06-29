@@ -2,6 +2,10 @@
     position: relative;
 }
 
+#sidebar{
+    color: white;
+}
+
 #logotipo{
     position: relative;
     max-width: 110%;
@@ -33,11 +37,16 @@
     width: 90%;
     margin: 15px 17px;
 }
+.list-ios {
+    margin: 0px 20px 2px;
+}
 
 //Cor do nome dos games
 .item-ios h2{
     color: white;
     font-weight: bold;
+    margin: 0 0 10px;
+    font-size: 1.83rem;
 }
 
 //Margem entre os games da lista
@@ -56,12 +65,38 @@
     border-radius: 25%;
     position: relative;
     bottom: 80px;
+    box-shadow: 0px 0px 25px 5px black;
 }
 
 //Nome do game
 .input-wrapper .label-ios {
-    margin: -1px 52px 86px -35px 0;
-    color: white;
-    left: -35px;
-    /* position: relative; */
+    width: 100%;
+    position: absolute;
+    top: 133px;
+    left: -1px;
+    text-align: center;
+}
+
+//Ícone para adicionar à lista de desejos
+.item-ios .item-button {
+    position: relative;
+    top: -30px;
+    right: 7px;
+    padding: 0 0.5em;
+    height: 60px;
+    font-size: 30px;
+    width: 60px;
+    border-radius: 100%;
+    border: 2.5px solid green;
+}
+ion-icon {
+    display: inline-block;
+    color: green;
+    font-size: 1em;
+}
+icon-ios .ion-ios-heart{
+    height: 26px;
+}
+.button-ios{
+    background-color: #151515;
 }
