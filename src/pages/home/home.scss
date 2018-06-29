@@ -8,8 +8,21 @@
 
 #logotipo {
     position: relative;
-    max-width: 110%;
+    max-width: 113%;
     left: -13px;
+    margin: 5px;
+    top: 5px;
+}
+
+.bar-button-menutoggle-ios {
+    margin: 0px 7px;
+    padding: 0;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    min-width: 36px;
+    top: 5px;
 }
 
 .searchbar-ios {
@@ -21,13 +34,13 @@
     top: -1px;
 }
 
-.fa .fa-bell{
+.fa-bell{
     color: lightgrey;
     position: relative;
     top: 48px;
     z-index: 1;
-    font-size: 26px;
-    left: 330px;
+    font-size: 20px;
+    left: 286px;
 }
 
 ion-header {
@@ -38,6 +51,10 @@ ion-header {
     display: block;
     width: 100%;
     margin: -16px 0px;
+}
+
+.scroll-content{
+    margin-top: 65px;
 }
 
 .toolbar-ios ion-title {
@@ -76,11 +93,11 @@ ion-header {
 }
 
 //Cor do nome dos games
-.item-ios h2{
+.item-ios h2 {
     color: white;
     font-weight: bold;
     margin: 0 0 14px;
-    font-size: 1.83rem;
+    font-size: 1.48rem;
 }
 
 //Margem entre os games da lista
@@ -112,13 +129,13 @@ ion-header {
 }
 
 //Ícone para adicionar à lista de desejos
-.item-ios .item-button {
-    position: relative;
-    top: -30px;
-    right: 7px;
+.item-ios .item-button{
+    position: absolute;
+    top: 41px;
+    right: -2px;
     padding: 0 0.5em;
     height: 60px;
-    font-size: 15px;
+    font-size: 13px;
     width: 60px;
     border-radius: 100%;
     border: 2.5px solid green;
@@ -184,7 +201,7 @@ icon-ios .ion-ios-heart{
     position: relative;
     top: -80px;
     color: white;
-    left: 100px;
+    left: 89px;
     font-size: 1.6rem;
     font-weight: bold;
 }
