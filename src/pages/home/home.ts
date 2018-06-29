@@ -19,7 +19,7 @@ export class HomePage {
   desejos = [];
   items: string[];
 
-  constructor(public navCtrl: NavController, public gameProvider: GamesProvider, public desejosProvider: DesejosProvider, private toast: ToastController) {
+  constructor(public navCtrl: NavController, public gameProvider: GamesProvider, public desejosProvider: DesejosProvider, public toastCtrl: ToastController) {
     this.lista = this.gameProvider.allTeste();
   }
 
@@ -30,24 +30,6 @@ export class HomePage {
       }
     });
   }
-
-
- 
-
-  // getItems(ev: any) {
-  //   // Reset items back to all of the items
-  //   this.gameProvider.allTeste();
-
-  //   // set val to the value of the searchbar
-  //   const val = ev.target.value;
-
-  //   // if the value is an empty string don't filter the items
-  //   if (val && val.trim() != '') {
-  //     this.items = this.items.filter(item => {
-  //       return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
-  //     })
-  //   }
-  // }
 
   abreDesejos(item){
     this.navCtrl.push(ListPage, {dados:item});
@@ -62,6 +44,15 @@ export class HomePage {
 
     this.desejos.push(item);
     this.desejosProvider.setStorage('desejos',this.desejos);
+  }
+
+
+  presentToastAdd(){
+    let toast = this.toastCtrl.create({
+      message: 'Jogo adicionado à lista de desejos !',
+      duration: 2000  
+    });
+  toast.present();
   }
 
 }

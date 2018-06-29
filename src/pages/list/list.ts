@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ToastController } from 'ionic-angular';
 
 import { IGames } from '../../interfaces/IGames';
 
@@ -15,7 +15,7 @@ export class ListPage {
   
   desejos = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public desejosProvider:DesejosProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public desejosProvider:DesejosProvider, public toastCtrl: ToastController) {
     
   }
 
@@ -42,4 +42,13 @@ export class ListPage {
     this.desejos = novaLista;
     this.desejosProvider.setStorage('desejos',this.desejos);
   }
+
+  presentToastRem(){
+    let toast = this.toastCtrl.create({
+      message: 'Jogo removido da lista de desejos !',
+      duration: 2000  
+    });
+  toast.present();
+  }
+
 }

@@ -28,7 +28,7 @@
       </ion-item>
 
       <ion-item-options side="right">
-        <button (click)="deletarItem(item)" ion-button color="danger">
+        <button (click)="deletarItem(item)" (click)="presentToastRem()" ion-button color="danger">
           <ion-icon name="trash"></ion-icon>
           Remover
         </button>
