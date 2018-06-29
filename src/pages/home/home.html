@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon id="sidebar" name="menu"></ion-icon>
     </button>
-    <ion-title><img id="logotipo" src="../../assets/imgs/logosemfundo.png"></ion-title>
+    <ion-title><img id="logotipo" src="/assets/imgs/logosemfundo.png"></ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -22,6 +22,13 @@
       </ion-thumbnail>
       <h2>{{ item.app_name }}</h2>
       <p>{{ item.app_price }}</p>
+      <div class="plataformas container">
+        <img id="steam" alt="steamIcon" src="assets/imgs/steamIcon.png">
+        <img id="origin" alt="originIcon" src="assets/imgs/originIcon.png">
+        <img id="nuuvem" alt="nuuvemIcon" src="assets/imgs/nuuvemIcon.png">
+      </div>
+      <h3 id="p1">NaN</h3>
+      <h3 id="p2">NaN</h3>
       <button ion-button (click)="addDesejos(item)" (click)="presentToastAdd()" item-end><ion-icon name="heart"></ion-icon></button>
     </ion-item>
   </ion-list>

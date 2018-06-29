@@ -45,7 +45,7 @@
 .item-ios h2{
     color: white;
     font-weight: bold;
-    margin: 0 0 10px;
+    margin: 0 0 14px;
     font-size: 1.83rem;
 }
 
@@ -99,4 +99,55 @@ icon-ios .ion-ios-heart{
 }
 .button-ios{
     background-color: #151515;
+}
+
+.plataformas {
+    top: -215px;
+    left: 10px;
+}
+.plataformas #steam{
+    position: relative;
+    left: 10px;
+    top: 165px;
+    width: 33px;
+}
+.item-ios p {
+    overflow: inherit;
+    font-size: 1.6rem;
+    line-height: normal;
+    text-overflow: inherit;
+    color: white;
+    margin: 0px -20px -6px 8px;
+    font-weight: bolder;
+}
+
+#origin {
+    position: relative;
+    left: -132px;
+    top: 175px;
+    width: 13%;
+}
+#p1{
+    position: relative;
+    top: -79px;
+    color: #ffffff;
+    left: -104px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#nuuvem {
+    position: relative;
+    right: -45px;
+    bottom: -179px;
+    width: 19%;
+    height: 60px;
+}
+#p2 {
+    position: relative;
+    top: -101px;
+    color: white;
+    left: 135px;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
