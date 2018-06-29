@@ -1,4 +1,67 @@
-page-home {
-    
+.container{
+    position: relative;
 }
 
+#logotipo{
+    position: relative;
+    max-width: 110%;
+    left: -7px;
+}
+
+.toolbar-ios ion-title {
+    background-color: black;
+}
+
+.fixed-content, .item-inner, .item-ios{
+    background-color: #151515;
+}
+
+//Editando aparência ao clicar no menubar
+.toolbar-ios {
+    padding: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    min-height: 70px;
+}
+.input-wrapper .label-ios {
+    margin: 20px 8px 11px 0;
+    color: white;
+}
+
+//Barra de pesquisa
+.searchbar-input-container{
+    width: 90%;
+    margin: 15px 17px;
+}
+
+//Cor do nome dos games
+.item-ios h2{
+    color: white;
+    font-weight: bold;
+}
+
+//Margem entre os games da lista
+.list-ios > .item-block{
+    border-top: 0.55px solid #c8c7cc;
+}
+
+//Deixando cada item conforme planejado
+//Imagem
+.item-ios ion-thumbnail[item-start] {
+    margin: 100px 64px 5px 10px;
+}
+.item-ios ion-thumbnail img {
+    width: 150px;
+    height: 115px;
+    border-radius: 25%;
+    position: relative;
+    bottom: 80px;
+}
+
+//Nome do game
+.input-wrapper .label-ios {
+    margin: -1px 52px 86px -35px 0;
+    color: white;
+    left: -35px;
+    /* position: relative; */
+}
